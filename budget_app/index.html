@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<h1>My Budget App</h1>
+	<div class="budgetbwrapper" id="budget">
+		
+		<div class="query-budget">
+			<span>Your Budget</span>
+			<input
+			type="number" 
+			placeholder="Your Budget" 
+			class="myBudget"
+			v-model="myBudget">
+			<span>Your Income</span>
+			<input 
+			type="number" 
+			placeholder="Your Income"
+			class="myIncome"
+			v-model="myIncome">
+			<span>Your Expense</span>
+			<input 
+			type="number" 
+			placeholder="Your Expense" 
+			class="myExpense"
+			v-model="myExpense">
+			<button v-on:click="getInfo">Get Info</button>
+		</div>
+
+		<div class="budgetAnswer">
+			
+			<span class="answer-item">Your Budget Is </span><span id="demo1"></span>
+			<br>
+			<span class="answer-item">Your Income Is </span><span id="demo2"></span>
+			<br>
+			<span class="answer-item">Your Expense Is </span><span id="demo3"></span>
+			<br>
+			<span class="answer-item">Your Total Earnings Is </span><span id="demo4"></span>
+			<br>
+
+			<button class="addBTn" v-on:click="add">Add to MyBudget</button>
+		</div>
+
+		<div class="wrapper">
+			<div class="myBudgetHistory">
+				<table v-if="first" border="10">
+					<tr v-for="key in history">
+						<td>{{key.name}}</td>
+						<td>{{key.budget}}</td>
+						<td>{{key.income}}</td>
+						<td>{{key.expense}}</td>
+						<td>{{key.total}}</td>
+						<td style="cursor: pointer;font-size: 18px;text-align: center;" v-on:click="deleteFunction">{{key.delete}}</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+	</div>
+	
+	<script src="js/vue.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
