@@ -1,0 +1,281 @@
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background: #F7F6F5;
+	overflow-x: hidden;
+}
+header {
+	width: 100%;
+	height: auto;
+	background: #fff;
+	padding-top: 15px;
+}
+header .logo-unit {
+	width: 100%;
+	height: 100px;
+	background: #fff;
+	padding-right: 100px;
+}
+header .logo-unit .img-unit {
+	width: 80px;
+	margin: auto;
+}
+header .logo-unit img {
+	width: 110px;
+	height: 95px;
+	cursor: pointer;
+	border-radius: 100px;
+}
+header .nav {
+	width: 78%;
+	height: auto;
+	margin: auto;
+	margin-top: 40px;
+}
+header .nav ul {
+	display: inline-block;
+	list-style: none;
+}
+header .nav ul li {
+	display: inline-block;
+	list-style: none;
+	padding: 18px;
+}
+header .nav ul li a {
+	text-decoration: none;
+	color: #DD3333;
+	font-family: sans-serif;
+	font-weight: bolder;
+}
+header .nav ul li a:hover {
+	text-decoration: none;
+	color: #DD3333;
+	opacity: 0.6;
+}
+
+.shopping-cart {
+	width: 60px;
+	height: 60px;
+	background-color: #FFF;
+	box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.3);
+	position: fixed;
+	right: 10px;
+	top: 15px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.shopping-cart:focus .bigBasket {
+	display: block;
+}
+.shopping-cart:hover {
+	box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.5);
+}
+.shopping-cart i {
+	font-size: 30px;
+	margin-top: 15px;
+	padding-left: 12px;
+}
+.shopping-cart h5 {
+	position: absolute;
+	width: 22px;
+	height: 22px;
+	font-size: 13px;
+	padding-top: 3.5px;
+	text-align: center;
+	border-radius: 50px;
+	background: #E94B35;
+	top: -10px;
+	left: -10px;
+	color: #fff;
+}
+.bigBasket {
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	top: 0;
+	right: 0;
+	cursor: default;
+	display: none;
+}
+#responsiveMenu {
+	position: absolute;
+	top: 35px;
+	right: 50px;
+	font-size: 20px;
+	padding: 10px 12px;
+	background: #F4645A;
+	color: #fff;
+	cursor: pointer;
+	display: none;
+}
+#myBasket {
+	position: absolute;
+	width: 450px;
+	height: 90vh;
+	background: white;
+	top: 0;
+	right: 10px;
+	border-radius: 5px;
+	margin-top: 30px;
+	transition: 0.5s;
+}
+#myObjects {
+	width: 100%;
+	height: 410px;
+	overflow-y: scroll;
+}
+#myObjects > img {
+	width: 120px;
+	height: 120px;
+	display: none;
+}
+#myObjects > div > input {
+	outline: none;
+	height: 35px;
+	font-size: 20px;
+	text-indent: 15px;
+	border: 1px solid #777;
+}
+#closeCart {
+	font-size: 50px;
+	float: right;
+	cursor: pointer;
+	position: fixed;
+	bottom: 12px;
+	right: 15px;
+	display: none;
+
+}
+.secret-navs {
+	width: 100%;
+	height: 0px;
+	overflow-y: scroll;
+	transition: all 0.3s;
+}
+.secret-navs .secret-nav-items {
+	width: 100%;
+	height: 30px;
+	border-bottom: 1px solid #E8E8E8;
+}
+.secret-navs a {
+	text-decoration: none;
+	color: #F5645A;
+}
+.secret-navs a:hover {
+	text-decoration: none;
+	color: #F5645A;
+	opacity: 0.6;
+}
+.secret-navs::-webkit-scrollbar {
+  width: 0.35rem;
+}
+
+.secret-navs::-webkit-scrollbar-track {
+  background: #E5E5E5;
+}
+.secret-navs::-webkit-scrollbar {
+    width: 5px;
+}
+.secret-navs::-webkit-scrollbar-thumb {
+    background: rgba(204,204,204,0.5);
+}
+.secret-navs::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+}
+.container {
+	width: 90%;
+	height: auto;
+	margin: auto;
+}
+.cards {
+	height: auto;
+	display: inline-block;
+	border-radius: 5px;
+	text-align: center;
+	padding: 16px;
+}
+.cards img {
+	width: 100%;
+	height: 250px;
+	background: #fff;
+	border-radius: 5px;
+}
+.cards > span {
+	margin-top: 50px;
+}
+.cards:hover > button {
+	background: #FF3B46;
+	color: #fff;
+}
+.cards button {
+	padding: 8px 10px;
+	border: 0.5px solid #ddd;
+	border-radius: 2px;
+	background: #fff;
+	transition: all 0.2s;
+	outline: none;
+	cursor: pointer;
+	font-size: 14px;
+	line-height: 1px;
+	font-family: sans-serif;
+}
+/*.cards i {
+	font-family: sans-serif;
+}*/
+.cards > span {
+	color: #555;
+}
+section {
+	margin-top: 20px;
+	display: none;
+}
+.theme,.theme1 {
+	font-size: 20px;
+	color: red;
+	cursor: pointer;
+}
+.light {
+	background: #f1f1f1;
+}
+.dark {
+	background: #555;
+}
+@media (max-width: 990px) {
+	header .logo-unit .img-unit {
+		margin-left: 20px;
+	}
+	header .nav {
+		display: none;
+	}
+}
+@media (max-width: 800px) {
+	.shopping-cart {
+		margin-top: 520px;
+	}
+	#responsiveMenu {
+		display: block
+	}
+}
+@media (max-width: 530px) {
+	#myBasket {
+		width: 100%;
+		padding-left: 20px
+	}
+}
+@media (max-width: 790px) {
+	.cards > img {
+		height: auto
+	}
+}
+@media (max-width: 1125px) {
+	 header .logo-unit {
+	 	padding: 0
+	 }
+}
+Сделать заказ - 40,500.00 UZS
