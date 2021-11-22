@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #C5E0F2;
+    justify-content: center;
+    padding: 80px 20px 150px 20px;
+}
+
+.cards {
+    width: 380px;
+    height: auto;
+    z-index: 11111;
+    background: #fff;
+    position: relative;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 15px 10px 15px 10px;
+    padding: 30px 20px 100px 20px;
+}
+
+.title {text-align: center;font-size: 40px;}
+
+.cost {width: 50%;margin: 30px auto;}
+
+.price {
+    margin: auto;
+    width: 155px;
+    height: 155px;
+    display: flex;
+    font-size: 60px;
+    color: #ffffff;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.price:before {
+    content: "$";
+    font-size: 35px;
+    margin-top: -20px;
+}
+.price:after {
+    content: "/ mo";
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+.description {width: 95%;margin: 20px auto;}
+
+.description i {padding: 5px 5px 5px 5px;border-radius: 50%;color: #fff;}
+
+.btn-buy {
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 18px;
+    border-radius: 25px;
+}
+
+span {text-indent: 30px;}
+
+.myHr {width: 60px;height: 3px;margin: 20px auto;background: #000;}
+
+.is-bg-red {background: #FE5F85;}
+
+.is-bg-blue {background: #01CCFF;}
+
+.is-bg-purple {background: #9069E8;}
+
+.is-bg-white-dark {background: #B6D1E1;}
+
+.is-bg-white-light {background: #F4F6FA;}
+
+
+.bordered-bg {
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 35%;
+    z-index: -111;
+    position: absolute;
+    border-radius: 0 100px 50px 1500px;
+}
+.bordered-bg-body {
+    top: 0;
+    right: 0;
+    width: 55%;
+    height: 65%;
+    z-index: -111;
+    position: absolute;
+    border-radius: 0 100px 550px 1500px;
+}
+
+.bordered-bg-bottom {
+    bottom: 0;
+    left: 0;
+    width: 32%;
+    height: 15%;
+    z-index: -111;
+    position: absolute;
+    border-radius: 0px 1000px 0 100px;
+}
+.bordered-bg-bottom-body {
+    bottom: 0;
+    left: 0;
+    width: 25%;
+    height: 35%;
+    z-index: -111;
+    position: fixed;
+    border-radius: 50px 1500px 0 0;
+}
+
+img {position: fixed;bottom: 0;}
