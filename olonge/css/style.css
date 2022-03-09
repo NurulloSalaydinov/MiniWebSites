@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    font-family: Montserrat;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: #fff;
+}
+::-webkit-scrollbar-thumb {
+    background: #ddd;
+    border-radius: 100px;
+}
+
+/* nav */
+
+.nav {
+    width: 100%;
+    z-index: 11;
+    height: 100px;
+    padding: 12px 16px;
+    background: #fff;
+    position: relative;
+}
+
+.nav-logo {
+    top: 0;
+    left: 50px;
+    position: absolute;
+}
+
+.nav-logo img {
+    z-index: 11;
+    width: 200px;
+    height: 90px;
+    position: absolute;
+}
+
+.myUl {
+    top: 38px;
+    right: 50px;
+    position: absolute;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.myUl li {
+    list-style: none;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: inline-block;
+}
+
+.myUl a {
+    font-family: Montserrat;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #252B42;
+}
+
+.myUl a:hover {
+    color: #FA4A0C;
+}
+
+.myUl .active-link {
+    color: #FA4A0C;
+}
+
+.menu-opener {
+    top: 40px;
+    right: 10px;
+    color: #000;
+    display: none;
+    cursor: pointer;
+    position: absolute;
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        border-bottom: 1px solid #000;
+    }
+    .nav-logo img {
+        left: -50px;
+    }
+    .myUl .menu-opener {
+        display: block;
+    }
+    .myUl {
+        top: 50px;
+        left: -50px;
+        height: 0;
+        width: 150%;
+        overflow: hidden;
+        background: #fff;
+        transform: translateY(50px);
+    }
+    .myUl li {
+        display: block;
+        padding-top: 10px;
+    }
+    .menu-opener {
+        display: block;
+    }
+}
+
+.menu-active {
+    height: 150px;
+}
+
+/* end nav */
+
+/* banner */
+
+.banner {
+    width: 100%;
+    height: 510px;
+    color: #fff;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/Rectangle48.png);
+}
+
+.banner-title .title {
+    padding-top: 80px;
+    font-weight: bolder;
+}
+
+.banner-text h1 {
+    padding-top: 10px;
+    font-weight: 900;
+}
+
+.banner-btn p {
+    padding-top: 10px;
+    font-weight: normal;
+}
+
+.banner-btn .btn-playstore {
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 48px;
+    border-radius: 50px;
+    background: #FA4A0C;
+}
+
+.banner-btn .btn-appstore {
+    color: #fff;
+    margin-left: 30px;
+    padding: 10px 48px;
+    border-radius: 50px;
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .banner-btn .btn-appstore {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+}
+
+/* end banner */
+
+/* main content */
+
+/* main content 1 */
+
+.main-content-1 {
+    height: 700px;
+    position: relative;
+}
+
+.main-content-1 .rectange-phone-1 {
+    top: -270px;
+    left: 18%;
+    position: absolute;
+}
+
+.main-content-1 .rectange-phone-2 {
+    top: -70px;
+    right: 18%;
+    position: absolute;
+}
+
+.my-hr {
+    width: 100%;
+    height: 2px;
+    background: #E4E4E4;
+}
+
+@media screen and (max-width: 1125px) {
+    .main-content-1 {
+        height: 800px;
+    }
+    .main-content-1 .rectange-phone-1 {
+        top: 0;
+        left: -100px;
+    }
+    .main-content-1 .rectange-phone-2 {
+        top: 150px;
+        right: 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    .main-content-1 {
+        display: none;
+    }
+}
+
+/* end main content 1 */
+
+/* main content 2 */
+
+.img-side img {
+    margin-top: -10%;
+    margin-left: 9%;
+}
+
+.text-content {
+    text-align: left;
+    padding-top: 17%;
+}
+
+.text-orange {
+    color: #FA4A0C;
+}
+
+@media screen and (max-width: 992px) {
+    .text-content {
+        padding-top: 70px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .text-content {
+        padding-top: 10px;
+        text-align: center;
+    }
+}
+
+/* end main content 2 */
+
+/* footer banner */
+
+.footer-banner {
+    width: 100%;
+    height: 400px;
+    color: #fff;
+    padding-top: 120px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/Rectangle47.png);
+}
+
+/* footer */
+
+.footer {
+    position: relative;
+    padding: 12px 50px;
+}
+
+.footer-icons {
+    top: 50px;
+    left: 45%;
+    right: 45%;
+    position: absolute;
+}
+
+.footer span {
+    float: right;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 992px){
+    .footer-banner {
+        padding-top: 20%;
+    }
+    .footer-icons {
+        top: 50px;
+        left: 40%;
+        right: 35%;
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        text-align: center;
+    }
+    .footer-icons {
+        display: block; 
+        position: static;
+    }
+    .footer span {
+        float: none;
+    }
+}
+
+/* end footer */
+
+/* end footer banner */

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olonge</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="nav-logo">
+            <img src="img/BellaOlonjelogo.png" alt="">
+        </div>
+        <ul class="myUl">
+            <li>
+                <a class="active-link" href="">Home</a>
+            </li>
+            <li>
+                <a href="">Product</a>
+            </li>
+            <li>
+                <a href="">Faq</a>
+            </li>
+            <li>
+                <a href="">Contact</a>
+            </li>
+        </ul>
+        <a class="menu-opener"><i class="fas fa-bars"></i></a>
+    </div>     
+    <div class="banner">
+        <div class="banner-title">
+            <h3 class="title">Food app</h3>
+        </div>
+        <div class="banner-text">
+            <h1>
+                Why stay hungry when<br>you can order form Bella Onojie
+            </h1>
+        </div>
+        <div class="banner-btn">
+            <p>Download the bella onoje’s food app now on</p>
+            <br>
+            <button class="btn-playstore">Playstore</button>
+            <button class="btn-appstore">Appstore</button>
+        </div>
+    </div>
+    <div class="main-content-1">
+        <img src="img/Rectangle.png" class="rectange-phone-1" alt="">
+        <img src="img/Rectangle1.png" class="rectange-phone-2" alt="">
+    </div>
+    <div class="main-content-2 text-center">
+        <div class="container">
+            <div class="my-hr"></div>
+            <h1 class="mt-5">How the app works</h1>
+            <div class="app-1 mt-3">
+                <div class="row flex-wrap-reverse">
+                    <div class="col-md-6 img-side">
+                        <img src="img/Rectangle2.png" width="100%" alt="">
+                    </div>
+                    <div class="col-md-6 text-content">
+                        <p class="text-orange">Create an account</p>
+                        <h1>Create/login to an existing<br>account to get started</h1>
+                        <p>An account is created with your email<br>and a desired password</p>
+                    </div>
+                </div>
+            </div>
+            <div class="app-2 mt-3">
+                <div class="row">
+                    <div class="col-md-6 text-content">
+                        <p class="text-orange">Explore varieties</p>
+                        <h1>Shop for your favorites<br>meal as e dey hot.</h1>
+                        <p>Shop for your favorite meals or drinks<br>and enjoy while doing it.</p>
+                    </div>
+                    <div class="col-md-6 img-side">
+                        <img src="img/Rectangle3.png" width="100%" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="app-3 mt-3">
+                <div class="row flex-wrap-reverse">
+                    <div class="col-md-6 img-side">
+                        <img src="img/Rectangle4.png" width="100%" alt="">
+                    </div>
+                    <div class="col-md-6 text-content">
+                        <p class="text-orange">Checkout</p>
+                        <h1>When you done check out<br>and get it delivered.</h1>
+                        <p>When you done check out and get it<br>delivered with ease.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-banner text-center">
+        <h1 class="mt-3">Download the app now.</h1>
+        <p class="mt-3">Available on your favorite store. Start your premium experience now</p>
+        <div class="banner-btn mt-4">
+            <button class="btn-playstore">Playstore</button>
+            <button class="btn-appstore">Appstore</button>
+        </div>
+    </div>
+    <div class="footer">
+        <img src="img/BellaOlonjelogo.png" alt="">
+        <div class="footer-icons">
+            <i class="fab fa-twitter text-orange h2"></i>
+            <i class="fab fa-facebook-square text-orange h2"></i>
+            <i class="fab fa-instagram text-orange h2"></i>
+        </div>
+        <span>Copywright 2020 Bella Onojie.com</span>
+    </div>
+    <script>
+        let bar = document.querySelector('.menu-opener');
+        let menu = document.querySelector('.myUl');
+        x = 1
+        bar.addEventListener('click', () => {
+            x++;
+            if (x % 2 == 0) {
+                menu.classList.add('menu-active')
+            }
+            else {
+                menu.classList.remove('menu-active')
+            }
+        })
+    </script>
+    <!-- bootstrap bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
